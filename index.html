@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="player" class="flex justify-center relative rounded-lg">
+  <div class=" w-72 bg-gray-100 h-[1020px]">
+
+    <!-- dashboard -->
+  <div id="dashboard" class="fixed z-10 h-auto py-2 w-72">
+
+    <!-- title -->
+    <div class="flex flex-row">
+      <div class="flex justify-center flex-grow ml-10">
+        <p class="text-center font-semibold text-red-700 ">List Nhạc Của Chính</p>
+      </div>
+      <img id="switch" class="w-6 mr-3" src="https://cdn-icons-png.flaticon.com/128/9343/9343893.png" alt="">
+    </div>
+
+    <!-- header -->
+    <header class="mt-2 text-center">
+      <h4 class="font-semibold text-sm text-pink-700">Đang phát</h4>
+      <h2 class="font-semibold text-md"></h2>
+    </header>
+
+ 
+    <!-- CD -->
+    <!-- <div id="cd" class="pt-6 flex justify-center m-auto">
+      <img class="rounded-full w-52 object-cover" src="" >
+    </div> -->
+        <div class="pt-6" id="cd">
+          <div id="cd-thumb">
+          </div>
+        </div>
+       
+    
+
+  
+
+
+    <!-- control -->
+     <div id="control" class="pl-8 pt-8 flex flex-row gap-x-8">
+        <!-- replay -->
+         <div id="replay">
+          <img id="replayimg" class="w-4 h-auto pt-1" src="https://cdn-icons-png.flaticon.com/128/4210/4210845.png" alt="">
+         </div>
+        <!-- pre -->
+         <div id="pre">
+          <img class="w-4 h-auto pt-1" src="https://cdn-icons-png.flaticon.com/128/4211/4211379.png" alt="">
+         </div>
+        <!-- pause -->
+        <div id="pause">
+          <img id="icon" class="w-6 h-auto" src="https://cdn-icons-png.flaticon.com/128/260/260446.png" alt="">
+        </div>
+        <!-- next -->
+        <div id="next">
+          <img id="nexticon" class="w-4 h-auto pt-1" src="https://cdn-icons-png.flaticon.com/128/4211/4211373.png" alt="">
+        </div>
+        <!-- random -->
+        <div id="random">
+          <img id="randomimg" class="w-4 h-auto pt-1" src="https://cdn-icons-png.flaticon.com/128/10414/10414353.png" alt="">
+        </div>  
+     </div>
+
+    <input id="progress" class="ml-4 mt-4 h-1 w-64" type="range" value="0" step="1" min="0" max="100">
+   
+  </div>
+
+
+    <audio id="audio" src=""></audio>
+
+  
+
+    <!-- listmusic -->
+     <div id="playlist" class="relative z-0 flex flex-col gap-y-3 justify-center mt-[410px]">
+
+     </div>
+
+
+  </div>
+
+
+</div>
+
+
+<script src="./main.js"></script>
+
+</body>
+</html>

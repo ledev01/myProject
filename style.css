@@ -1,0 +1,36 @@
+      #cd {
+        display: flex;
+        margin: auto;
+        width: 200px;
+      }
+      
+      #cd-thumb {
+        width: 100%;
+        padding-top: 100%;
+        border-radius: 50%;
+        background-color: #333;
+        background-size: cover;
+        margin: auto;
+      }
+      #dashboard{
+        background-color: silver;
+      }
+      .silver{
+        background-color: silver;
+      }
+      .gray{
+        background-color: gray;
+      }
+      #song.active{
+        background-color:#FF6666;
+      }
+      #musicname.active{
+        color:white;
+      }
+      #singername.active{
+        color:white;
+      }
+      #song:active{
+        opacity:0.8;
+      }
+      
