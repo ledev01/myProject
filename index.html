@@ -8,10 +8,10 @@
 </head>
 <body>
 <div id="player" class="flex justify-center relative rounded-lg">
-  <div class=" w-72 bg-gray-100 h-[1020px]">
+  <div class=" sm:w-72 w-full bg-gray-100 h-[1020px]">
 
     <!-- dashboard -->
-  <div id="dashboard" class="fixed z-10 h-auto py-2 w-72">
+  <div id="dashboard" class="fixed z-10 h-auto py-2 sm:w-72 w-full">
 
     <!-- title -->
     <div class="flex flex-row">
@@ -43,7 +43,7 @@
 
 
     <!-- control -->
-     <div id="control" class="pl-8 pt-8 flex flex-row gap-x-8">
+     <div id="control" class="justify-center pt-8 flex flex-row sm:gap-x-8 gap-x-12">
         <!-- replay -->
          <div id="replay">
           <img id="replayimg" class="w-4 h-auto pt-1" src="https://cdn-icons-png.flaticon.com/128/4210/4210845.png" alt="">
@@ -65,9 +65,11 @@
           <img id="randomimg" class="w-4 h-auto pt-1" src="https://cdn-icons-png.flaticon.com/128/10414/10414353.png" alt="">
         </div>  
      </div>
+    
+     <div class="flex justify-center">
+    <input id="progress" class=" mt-4 h-1 sm:w-64 w-80" type="range" value="0" step="1" min="0" max="100">
+     </div>
 
-    <input id="progress" class="ml-4 mt-4 h-1 w-64" type="range" value="0" step="1" min="0" max="100">
-   
   </div>
 
 

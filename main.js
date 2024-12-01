@@ -71,7 +71,7 @@ songs: [
      const htmls =this.songs.map((song,index) =>{
       return `
           <div class="flex justify-center ">
-            <div id="song" class="bg-white w-[270px] h-12 shadow-lg rounded-md flex flex-row px-2 ${index === this.currentIndex ? 'active' :''}" data-index="${index}">
+            <div id="song" class="bg-white sm:w-[270px] sm:px-2 w-[400px] px-2 h-12 shadow-lg rounded-md flex flex-row ${index === this.currentIndex ? 'active' :''}" data-index="${index}">
               <div class="flex flex-grow items-center">
                 <img class=" h-10 w-10 rounded-full" src="${song.image}" alt="">
                 <div class="flex flex-col ml-2 ">
